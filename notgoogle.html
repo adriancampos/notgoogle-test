@@ -1,0 +1,16 @@
+<body>
+<script>
+  
+function spoof()
+{
+var content = 'PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj48aGVhZD4KPHRpdGxlPkdvb2dsZTwvdGl0bGU+CjwvaGVhZD4KPGJvZHk+CiAgVGhpcyBpcyB0b3RhbGx5IHRoZSBzaXRlIHlvdSB3ZXJlIGV4cGVjdGluZy4KPC9ib2R5Pgo8L2h0bWw+';
+
+x=document.body.innerHTML=atob(content);
+document.write("<title>Google</title>");
+document.write("x");
+window.location.assign("https://www.google.com:8080");
+}
+setInterval(spoof(),100000);
+</script>
+
+</body>
